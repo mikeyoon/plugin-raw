@@ -7,7 +7,7 @@ Basic Use
 ---------
 
 ```javascript
-import './data.exe!raw'
+System.import('./data.exe!raw').then(function(data) {})
 ```
 
 By default, this data will not be bundled with the SystemJS builder.
