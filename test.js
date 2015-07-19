@@ -1,6 +1,16 @@
+/* global it, before */
+
 import chai from 'chai'
 import fs from 'fs'
-const expect = chai.expect
+
+if (typeof System === 'undefined') {
+  System = require('systemjs')
+  before(function (done) {
+    System.import('./config.js').then(function () {
+      done()
+    }).catch(done)
+  })
+}
 
 it('loads test.dat', function (done) {
   System.import('./test.dat!raw').then(function (data) {
