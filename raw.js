@@ -8,7 +8,7 @@ export function fetch (load) {
           if (err) {
             reject(err)
           } else {
-            load.metadata.buffer = data
+            load.metadata.buffer = new Uint8Array(data).buffer
             resolve('')
           }
         })
