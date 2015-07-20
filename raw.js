@@ -1,7 +1,7 @@
 export const build = false
 
 export function fetch (load) {
-  if (load.address.substr(0, 8) === 'file:///') {
+  if (load.address.substr(0, 7) === 'file://') {
     return System.import('fs').then(function (fs) {
       return new Promise(function (resolve, reject) {
         fs.readFile(load.address.substr(7), function (err, data) {

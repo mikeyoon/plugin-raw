@@ -1,7 +1,6 @@
 /* global it, before */
 
 import chai from 'chai'
-import fs from 'fs'
 
 if (typeof System === 'undefined') {
   System = require('systemjs')
@@ -78,5 +77,11 @@ it('loads test.dat', function (done) {
       142,
       10
     ]))
-  }).then(done, done)
+  }).then(done).catch(done)
+})
+
+it('loads large.dat', function (done) {
+  System.import('./large.dat!raw').then(function (data) {
+    done()
+  }).catch(done)
 })
