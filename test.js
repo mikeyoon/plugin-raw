@@ -1,6 +1,6 @@
 /* global it, before */
 
-import chai from 'chai'
+import {expect} from 'chai'
 
 if (typeof System === 'undefined') {
   System = require('systemjs')
@@ -13,7 +13,7 @@ if (typeof System === 'undefined') {
 
 it('loads test.dat', function (done) {
   System.import('./test.dat!raw').then(function (data) {
-    chai.expect(new Uint8Array(data)).deep.equal(new Uint8Array([
+    expect(new Uint8Array(data)).deep.equal(new Uint8Array([
       114,
       110,
       97,
@@ -77,11 +77,13 @@ it('loads test.dat', function (done) {
       142,
       10
     ]))
-  }).then(done).catch(done)
+    done()
+  }).catch(done)
 })
 
 it('loads large.dat', function (done) {
   System.import('./large.dat!raw').then(function (data) {
+    expect(typeof data).to.equal('object')
     done()
   }).catch(done)
 })
