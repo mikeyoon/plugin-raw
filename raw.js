@@ -15,7 +15,8 @@ export function fetch (load) {
       })
     })
   } else {
-    return System.import('fetch').then(function (_fetch) {
+    return (window.fetch ? Promise.resolve() : System.import('fetch'))
+    .then(function () {
       return window.fetch(load.address)
     }).then(function (data) {
       return data.arrayBuffer()
