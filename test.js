@@ -1,19 +1,10 @@
 /* global it, before */
 
-import {expect} from 'chai'
+import test from 'ava'
 
-if (typeof System === 'undefined') {
-  System = require('systemjs')
-  before(function (done) {
-    System.import('./config.js').then(function () {
-      done()
-    }).catch(done)
-  })
-}
-
-it('loads test.dat', function (done) {
-  System.import('./test.dat!raw').then(function (data) {
-    expect(new Uint8Array(data)).deep.equal(new Uint8Array([
+test('loads test.dat', function(t) {
+  return System.import('./test.dat!raw').then(function (data) {
+    t.same(new Uint8Array(data), new Uint8Array([
       114,
       110,
       97,
@@ -77,13 +68,11 @@ it('loads test.dat', function (done) {
       142,
       10
     ]))
-    done()
-  }).catch(done)
+  })
 })
 
-it('loads large.dat', function (done) {
-  System.import('./large.dat!raw').then(function (data) {
-    expect(typeof data).to.equal('object')
-    done()
-  }).catch(done)
+test('loads large.dat', function(t) {
+  return System.import('./large.dat!raw').then(function (data) {
+    t.same(typeof data, 'object')
+  })
 })
