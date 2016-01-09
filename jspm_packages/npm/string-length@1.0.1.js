@@ -1,0 +1,1 @@
+module.exports = require("npm:string-length@1.0.1/index");

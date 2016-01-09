@@ -1,0 +1,1 @@
+module.exports = require("npm:read-all-stream@3.0.1/index");

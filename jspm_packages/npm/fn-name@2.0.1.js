@@ -1,0 +1,1 @@
+module.exports = require("npm:fn-name@2.0.1/index");

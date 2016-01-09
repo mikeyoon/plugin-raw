@@ -1,0 +1,1 @@
+module.exports = require("npm:is-redirect@1.0.0/index");

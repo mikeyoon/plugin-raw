@@ -1,0 +1,1 @@
+module.exports = require("npm:ava@0.2.0/index");

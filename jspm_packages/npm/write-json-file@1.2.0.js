@@ -1,0 +1,1 @@
+module.exports = require("npm:write-json-file@1.2.0/index");

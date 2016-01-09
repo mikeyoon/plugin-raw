@@ -1,0 +1,1 @@
+module.exports = require("npm:imurmurhash@0.1.4/imurmurhash");

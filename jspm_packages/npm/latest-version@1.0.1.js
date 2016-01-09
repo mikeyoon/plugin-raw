@@ -1,0 +1,1 @@
+module.exports = require("npm:latest-version@1.0.1/index");

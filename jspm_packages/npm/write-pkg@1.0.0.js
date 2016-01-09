@@ -1,0 +1,1 @@
+module.exports = require("npm:write-pkg@1.0.0/index");

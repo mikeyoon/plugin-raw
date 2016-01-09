@@ -1,0 +1,1 @@
+module.exports = require("npm:package-json@1.2.0/index");

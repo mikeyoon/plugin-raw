@@ -1,0 +1,1 @@
+module.exports = require("npm:nested-error-stacks@1.0.2/index");

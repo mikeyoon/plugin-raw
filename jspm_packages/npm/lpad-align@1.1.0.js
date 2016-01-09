@@ -1,0 +1,1 @@
+module.exports = require("npm:lpad-align@1.1.0/index");

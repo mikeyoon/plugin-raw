@@ -1,0 +1,1 @@
+module.exports = require("npm:semver-diff@2.1.0/index");

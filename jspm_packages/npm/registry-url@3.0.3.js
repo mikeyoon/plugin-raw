@@ -1,0 +1,1 @@
+module.exports = require("npm:registry-url@3.0.3/index");

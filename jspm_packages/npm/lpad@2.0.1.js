@@ -1,0 +1,1 @@
+module.exports = require("npm:lpad@2.0.1/index");

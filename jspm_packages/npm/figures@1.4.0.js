@@ -1,0 +1,1 @@
+module.exports = require("npm:figures@1.4.0/index");

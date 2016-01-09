@@ -1,0 +1,1 @@
+module.exports = require("npm:configstore@1.4.0/index");

@@ -1,0 +1,1 @@
+module.exports = require("npm:squeak@1.3.0/index");

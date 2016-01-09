@@ -1,0 +1,1 @@
+module.exports = require("npm:camelcase@2.0.1/index");

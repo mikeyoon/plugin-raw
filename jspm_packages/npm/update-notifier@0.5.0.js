@@ -1,0 +1,1 @@
+module.exports = require("npm:update-notifier@0.5.0/index");

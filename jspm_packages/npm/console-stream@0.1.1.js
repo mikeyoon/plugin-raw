@@ -1,0 +1,1 @@
+module.exports = require("npm:console-stream@0.1.1/index");

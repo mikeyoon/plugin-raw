@@ -1,0 +1,1 @@
+module.exports = require("npm:timed-out@2.0.0/index");
