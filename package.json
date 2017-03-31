@@ -1,5 +1,6 @@
 {
   "name": "plugin-raw",
+  "version": "1.0.0",
   "main": "raw.js",
   "registry": "jspm",
   "devDependencies": {
