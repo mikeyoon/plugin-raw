@@ -10,7 +10,7 @@
     "core-js": "npm:core-js@^1.1.0"
   },
   "dependencies": {
-    "hctef": "hctef@^0.3.1"
+    "hctef": "^0.3.1"
   },
   "scripts": {
     "test": "jspm run test.js"
